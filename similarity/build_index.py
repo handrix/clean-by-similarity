@@ -16,4 +16,5 @@ class IndexData(object):
             items = json.loads(f.read())
         for num, item in enumerate(items):
             es.index(index=name, doc_type=doc_type, id=num + 1, body=item)
-            print(num + 1)
+            # print(num + 1)
+        print('data index done!')
